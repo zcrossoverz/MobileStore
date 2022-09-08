@@ -4,8 +4,9 @@ const config = require("./app/config");
 const app = express();
 
 
-const setUpProductRoutes = require("./app/routes/product.router");
-const setUpBrandRoutes = require("./app/routes/brand.router");
+const setUpProductRoutes = require("./app/routes/product.route");
+const setUpBrandRoutes = require("./app/routes/brand.route");
+const setUpOrderRoutes = require("./app/routes/order.route");
 
 app.use(cors());
 app.use(express.json());
@@ -13,6 +14,7 @@ app.use(express.json());
 
 setUpProductRoutes(app);
 setUpBrandRoutes(app);
+setUpOrderRoutes(app);
 
 app.get("/", (req, res) => { 
     res.send({message:"hello world"});
