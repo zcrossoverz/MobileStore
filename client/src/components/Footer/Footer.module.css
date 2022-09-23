@@ -1,0 +1,24 @@
+.container {
+    background: #ccc;
+    padding: 1.2rem 1.6rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.icons {
+    padding: 0 6rem;
+}
+
+.icon {
+    margin: 0 8px;
+}
+
+.right_contents {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.list_urls {
+    margin-right: 32px;
+}

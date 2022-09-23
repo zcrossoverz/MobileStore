@@ -1,0 +1,42 @@
+.logo {
+    font-size: bold;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-left: 12rem;
+}
+
+.account {
+    margin-right: 12rem;
+}
+
+.signin_link {
+    display: inline-block;
+    margin: 0 0.6rem;
+}
+
+.signup_link {
+    display: inline-block;
+    margin: 0 0.4rem;
+}
+
+.cart_link {
+    display: inline-block;
+}
+
+.search {
+    margin: 1rem 2rem;
+    width: 20rem;
+}
+
+.container {
+    display: flex;
+    background: #ccc;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
