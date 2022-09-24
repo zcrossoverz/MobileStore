@@ -1,0 +1,35 @@
+.item {
+    height: 48vh;
+    /* background: #feefc3; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+}
+
+.item_content {
+    padding-top: 5rem;
+    padding-left: 7rem;
+    padding-right: 9.5rem;
+}
+
+.text_sm {
+    font-size: 1.3rem;
+    padding: 0.6rem 0;
+}
+
+.text_lg {
+    font-size: 2.9rem;
+    font-weight: 600;
+    padding: 0.6rem 0;
+}
+
+.text_md {
+    font-size: 1.6rem;
+    padding-top: 0.4rem;
+}
+
+.item_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,41 +1,76 @@
-import React from 'react'
+import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-export default function SimpleSlider() {
+import Style from "./Slider.module.css";
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false
-    };
+export default function SimpleSlider() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 800
+  };
+
+  const bg_colors = {
+    "blue":"#ADDDD0",
+    "purple":"#D2DAFF",
+    "orange":"#FFD1D1",
+    "pink":"#FFABE1",
+  }
+
+  const Item = (props) => {
+    return (
+    <div className={Style.item} style={{ backgroundColor: bg_colors[props.bg] }}>
+      <div className={Style.item_content}>
+        <div className={Style.text_sm}>
+          {props.text_1}
+        </div>
+        <div className={Style.text_lg}>
+          {props.text_2}
+        </div>
+        <div className={Style.text_md}>
+          {props.text_3}
+        </div>
+      </div>
+      <div className={Style.item_image}><img src={`${props.img_thumb}`} alt="thumbnail slider" /></div>
+    </div>
+    );
+  };
+
+  const Item2 = (props) => {
+    return (
+    <div className={Style.item} style={{ background: bg_colors[props.bg] }}>
+      <div className={Style.item_image} style={{ marginLeft:"-9.5rem" }}><img src={`${props.img_thumb}`} alt="thumbnail slider" /></div>
+      <div className={Style.item_content}>
+        <div className={Style.text_sm}>
+          {props.text_1}
+        </div>
+        <div className={Style.text_lg}>
+          {props.text_2}
+        </div>
+        <div className={Style.text_md}>
+          {props.text_3}
+        </div>
+      </div>
+    </div>
+    );
+  };
+
+  const items = [
+    <Item bg="blue" text_1="For all you are" text_2="Pixel 6a is here." text_3="Buy Pixel 6a and get up to 300$ with eligible phone trade-in." img_thumb="https://fscl01.fonpit.de/devices/67/2067-w320h320.png" />,
+    <Item2 bg="purple" text_1="For all you are" text_2="Pixel 6a is here." text_3="Buy Pixel 6a and get up to 300$ with eligible phone trade-in." img_thumb="https://fscl01.fonpit.de/devices/67/2067-w320h320.png" />,
+    <Item bg="orange" text_1="For all you are" text_2="Pixel 6a is here." text_3="Buy Pixel 6a and get up to 300$ with eligible phone trade-in." img_thumb="https://fscl01.fonpit.de/devices/67/2067-w320h320.png" />,
+    <Item2 bg="pink" text_1="For all you are" text_2="Pixel 6a is here." text_3="Buy Pixel 6a and get up to 300$ with eligible phone trade-in." img_thumb="https://fscl01.fonpit.de/devices/67/2067-w320h320.png" />,
+];
 
   return (
     <div>
-        <h2> Single Item</h2>
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
-      </div>
-  )
+      <Slider {...settings}>{items.map((e) => e)}</Slider>
+    </div>
+  );
 }
