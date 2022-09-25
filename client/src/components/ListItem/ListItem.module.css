@@ -1,0 +1,52 @@
+.container {
+    padding: 0 8rem;
+    margin-bottom: 2rem;
+}
+
+
+.item_container {
+    background: #fff;
+    /* height: 15rem; */
+    /* border: 1px solid rgb(247, 146, 146); */
+    border-radius: 2rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.4rem 0;
+}
+
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0.8rem;
+}
+
+.price {
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.label {
+    /* background: #ccc; */
+    display: flex;
+}
+
+.label_text {
+    font-size: 2.5rem;
+    /* background: rgb(255, 106, 106); */
+    background: var(--orange);
+    padding: 0.4rem 1.8rem;
+    margin: 0.2rem 1.4rem;
+    color: white;
+    width: 22rem;
+    justify-content: center;
+    display: flex;
+    /* border-top-left-radius: 4rem; */
+    /* border-bottom-left-radius: 4rem; */
+    /* border-top-right-radius: 4rem; */
+}

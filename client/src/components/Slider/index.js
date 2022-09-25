@@ -21,7 +21,7 @@ export default function SimpleSlider() {
     "purple":"#D2DAFF",
     "orange":"#FFD1D1",
     "pink":"#FFABE1",
-  }
+  };
 
   const Item = (props) => {
     return (
@@ -63,9 +63,9 @@ export default function SimpleSlider() {
 
   const items = [
     <Item bg="blue" text_1="For all you are" text_2="Pixel 6a is here." text_3="Buy Pixel 6a and get up to 300$ with eligible phone trade-in." img_thumb="https://fscl01.fonpit.de/devices/67/2067-w320h320.png" />,
-    <Item2 bg="purple" text_1="For all you are" text_2="Pixel 6a is here." text_3="Buy Pixel 6a and get up to 300$ with eligible phone trade-in." img_thumb="https://fscl01.fonpit.de/devices/67/2067-w320h320.png" />,
-    <Item bg="orange" text_1="For all you are" text_2="Pixel 6a is here." text_3="Buy Pixel 6a and get up to 300$ with eligible phone trade-in." img_thumb="https://fscl01.fonpit.de/devices/67/2067-w320h320.png" />,
-    <Item2 bg="pink" text_1="For all you are" text_2="Pixel 6a is here." text_3="Buy Pixel 6a and get up to 300$ with eligible phone trade-in." img_thumb="https://fscl01.fonpit.de/devices/67/2067-w320h320.png" />,
+    <Item2 bg="purple" text_1="Latest phone in the Apple family" text_2="Iphone 14 Pro is here." text_3="Buy Iphone 14 Pro and get up to 300$ with eligible phone trade-in." img_thumb="https://fscl01.fonpit.de/devices/53/2453-w320h320.png" />,
+    <Item bg="orange" text_1="Will be release soon" text_2="Huawei Watch GT 3 Pro" text_3="Huawei is scheduled to announce a slew of fresh smart products including the new Watch 3 Pro model on July 27." img_thumb="https://fscl01.fonpit.de/devices/40/2340-w320h320.png" />,
+    <Item2 bg="pink" text_1="New generation laptop" text_2="Asus Zenbook 17 Fold OLED" text_3="The Zenbook 17 Fold OLED will be released in the fourth quarter of 2022 at a price starting at $3,500. You can read whether this massive purchase is worth it, at least in terms of first impression." img_thumb="https://fscl01.fonpit.de/devices/31/2431-w320h320.png" />,
 ];
 
   return (

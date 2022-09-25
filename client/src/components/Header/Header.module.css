@@ -30,7 +30,7 @@
 
 .container {
     display: flex;
-    background: #ccc;
+    background: #fff;
     justify-content: space-between;
     align-items: center;
     height: 5rem;

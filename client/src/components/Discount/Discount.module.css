@@ -1,0 +1,22 @@
+.container {
+    margin: 3rem 0;
+    padding: 0 16rem;
+    width: 100%;
+}
+
+.content {
+    background: #ff465b;
+    padding: 1rem 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.4rem;
+}
+
+.text {
+    padding-left: 10rem;
+    line-height: 2rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: aliceblue;
+}

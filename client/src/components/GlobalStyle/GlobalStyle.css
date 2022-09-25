@@ -7,3 +7,13 @@
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
+
+body {
+    background-color: rgb(243,243,243);
+}
+
+:root {
+    --orange: rgb(255,104,95);
+    --purple: rgb(236,198,243);
+    --pink: rgb(255,45,116);
+}
